@@ -46,6 +46,7 @@ function cb(error , response, data) {
 
 function parseData(data) {
     let ch = cheerio.load(data);
+    console.log(ch);
     let bothInnings = ch('.card.content-block.match-scorecard-table .Collapsible');
     //let innings = ch('.match-scorecard-page.__web-inspector-hide-shortcut__ .Collapsible');
     //let link = ch(innings).find("h5");
@@ -54,7 +55,7 @@ function parseData(data) {
     for (let i = 0; i < bothInnings.length; i++) {
         let teamName = ch(bothInnings[i]).find("h5").text();
         teamName = teamName.split("INNINGS")[0].trim();
-        console.log(teamName);
+        //console.log(teamName);
         let allRows = ch(bothInnings[i]).find(".table.batsman tbody tr");
         for (let j = 0; j < allRows.length - 1; j++) {
             let allCols = ch(allRows[j]).find("td");
@@ -69,7 +70,7 @@ function parseData(data) {
 
                 //processDetails(teamName, batsmanName, runs, balls, fours, sixes, sr);
                 //processLeaderBoard(teamName, batsmanName, runs, balls, fours, sixes, sr);
-                processLeaderboard(teamName , batsmanName , runs , balls , fours , sixes);
+                //processLeaderboard(teamName , batsmanName , runs , balls , fours , sixes);
             }
         }
     }

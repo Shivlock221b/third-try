@@ -19,11 +19,11 @@ function cb(error, response, data) {
 function parseData(data) {
     let ch = cheerio.load(data);
     let alltags = ch('a[data-hover = "Scorecard"]');
-    for (let i = 0; i < alltags.length; i++) {
-        let link = ch(alltags[i]).attr("href");
+    //for (let i = 0; i < alltags.length; i++) {
+        let link = ch(alltags[0]).attr("href");
         let completeLink = `https://www.espncricinfo.com${link}`;
         getMatch(completeLink);
-    }
+    //}
 }
 
 module.exports = getALlMatches;
