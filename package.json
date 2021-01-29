@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/sushberiwal/Dev_1_Jan#readme",
   "dependencies": {
+    "canvas": "^2.6.1",
     "cheerio": "^1.0.0-rc.5",
     "excel4node": "^1.7.2",
+    "puppeteer": "^5.5.0",
     "request": "^2.88.2"
   }
 }

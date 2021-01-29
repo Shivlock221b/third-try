@@ -1,0 +1,400 @@
+/* *{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html,body{
+    margin: 0px;
+}
+
+.menu{
+    height: 40px;
+    border-top: 1px solid;
+    display:flex;
+    align-items: center;
+}
+
+.menu-options{
+    height: 60px;
+    border-top: 1px solid;
+    display: flex; 
+}
+
+.address{
+    height: 40px;
+    border: 1px solid;
+}
+
+.sheets{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    height: calc(100vh - 180px);
+    border: 1px solid;
+    overflow: auto;
+    position: relative;
+}
+
+.row{
+    display: flex;
+}
+
+.cell{
+    border: 1px solid;
+    min-height: 25px;
+    min-width: 60px;
+}
+
+.top-left-cell{
+    height: 25px;
+    width: 30px;
+    background: lightgray;
+}
+
+.top-row{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    background: lightgreen;
+}
+
+.top-row-cell{
+    border: 1px solid;
+    min-height: 25px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.left-col{
+    position: absolute;
+    background: lightgreen;
+}
+
+.left-col-cell{
+    height: 25px;
+    border: 1px solid;
+    width: 30px;
+    text-align: center;
+}
+
+.cells{
+    position: absolute;
+    left: 30px;
+    top: 25px;
+}
+
+.sheets-list{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.sheet{
+    margin-left: 10px;
+    border: 1px solid lightgreen;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: default;
+}
+
+.add-sheet{
+    margin-left: 10px;
+}
+
+.fas{
+    font-size: 25px;
+    color: lightgreen;
+}
+
+.active-sheet{
+    background: lightgreen;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.menu div{
+    margin-left: 10px;
+    cursor: default;
+}
+
+.file{
+
+}
+
+.home{
+
+}
+
+.home-menu-options{
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.font-style{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.bold{
+
+}
+
+.underline{
+
+}
+
+.italic{
+
+}
+
+.middle{
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color{
+
+}
+
+.right{
+    min-width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.right div{
+    border: 1px solid lightgray;
+    min-width: 30px;
+    min-height: 30px;
+    text-align: center;
+    cursor: default;
+}
+
+left-align{
+
+}
+
+center-align{
+
+}
+
+.right-align{
+
+}
+
+.active-menu{
+    background: lightgreen;
+    color: white;
+    padding: 5px;
+    border-radius: none;
+}
+
+.hide{
+    display: none;
+} */
+
+*{
+    box-sizing: border-box; 
+    font-family: 'Lato', sans-serif;
+}
+
+html,body{
+    margin: 0px;
+}
+
+.menu{
+    height: 40px;
+    border-top: 1px solid;
+    display: flex;
+    align-items: center;
+}
+.menu-options{
+    height: 60px;
+    border-top: 1px solid;
+    display: flex;
+}
+.address{
+    height: 40px;
+    border: 1px solid;
+}
+.sheets{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.content{
+    height: calc(100vh - 180px);
+    border: 1px solid;
+    overflow: auto;
+    position: relative;
+}
+
+.row{
+    display: flex;
+}
+.cell{
+    border: 1px solid;
+    min-height: 25px;
+    min-width: 60px;
+}
+
+.top-left-cell{
+    height: 25px;
+    width: 30px;
+    background: lightgray;
+}
+
+.top-row{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    background: lightgreen;
+}
+.top-row-cell{
+    border: 1px solid;
+    min-height: 25px;
+    min-width: 60px;
+    text-align: center;
+}
+.left-col{
+    position: absolute;
+    background: lightgreen;
+}
+.left-col-cell{
+    height: 25px;
+    border: 1px solid;
+    width: 30px;
+    text-align: center;
+}
+.cells{
+    position: absolute;
+    left: 30px;
+    top: 25px;
+}
+
+.sheets-list{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.sheet{
+    margin-left: 10px ;
+    border: 1px solid lightgreen;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: default;
+}
+.add-sheet{
+    margin-left: 10px;
+}
+.fas{
+    font-size: 25px;
+    color: lightgreen;
+}
+.active-sheet{
+    background: lightgreen;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.menu div{
+    margin-left: 10px;
+    cursor: default;
+}
+
+.file{
+
+}
+
+.home{
+
+}
+.home-menu-options{
+    display: flex;
+    align-items: center;
+}
+.left{
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.font-style{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.font-style div{
+    border: 1px solid lightgray;
+    min-height: 26px;
+    min-width: 35px;
+    text-align: center;
+    cursor: default;
+}
+.bold{
+
+}
+.underline{
+
+}
+.italic{
+
+}
+.middle{
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.color{
+
+}
+
+.right{
+    min-width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.right div{
+    border: 1px solid lightgray;
+    min-width: 30px;
+    min-height: 30px;
+    text-align: center;
+    cursor: default;
+}
+.left-align{
+
+}
+.center-align{
+
+}
+.right-align{
+
+}
+
+.active-menu{
+    background: lightgreen;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.hide{
+    display: none;
+}
