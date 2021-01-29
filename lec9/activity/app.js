@@ -120,6 +120,6 @@ io.on("connection", function (socket) {
   })
 });
 
-http.listen(5500, function () {
+http.listen(3000, function () {
   console.log("app started at port 3000 !!!");
 });
